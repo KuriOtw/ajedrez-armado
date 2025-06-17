@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Ajedrez Armado</title>
+  <link href="https://fonts.googleapis.com/css2?family=MedievalSharp&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/chess.js/0.12.0/chess.min.js"></script>
+</head>
+<body>
+  <div id="main-menu" class="screen">
+    <h1>Ajedrez Armado</h1>
+    <input type="text" id="username" placeholder="Tu nombre" />
+    <button id="start-btn">Iniciar partida JCJ</button>
+  </div>
+
+  <div id="game-screen" class="screen hidden">
+    <div id="game-header">
+      <span id="player-turn">Turno: Blancas</span>
+    </div>
+    <div id="chessboard"></div>
+    <div id="game-controls">
+      <button id="restart-btn">Volver a jugar</button>
+      <button id="menu-btn">Menú principal</button>
+    </div>
+  </div>
+
+  <div id="end-modal" class="modal hidden-modal">
+    <div class="modal-content">
+      <p id="end-message"></p>
+      <button id="rematch-btn">Revancha</button>
+      <button id="to-menu-btn">Menú principal</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
